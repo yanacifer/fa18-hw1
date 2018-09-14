@@ -88,4 +88,4 @@ git commit -am "whatever message you want"
 git push origin master
 ```
 
-Fill out the submission form for this homework, which can be found on Piazza.
+Fill out the submission form for this homework, which can be found in the assigments tab at https://your.rails.world
