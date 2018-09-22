@@ -1,15 +1,21 @@
 def squared_sum(a, b)
   # Q1 CODE HERE
+  return (a+b)*(a+b)
 
 end
 
 def sort_array_plus_one(a)
   # Q2 CODE HERE
+  b = a.sort
+ 
+  b.map!{ |item| item+1 }
+  return b
 
 end
 
 def combine_name(first_name, last_name)
   # Q3 CODE HERE
+  return "#{first_name} #{last_name}"
 
 end
 
@@ -49,4 +55,12 @@ def scrabble(word)
     z: 10,
   }
   # Q5 CODE HERE
+  #for the value in here
+  arr = word.split(//) 
+  array = []
+  arr.each do |elem|
+    array.push(values[elem.to_sym])
+  end
+  
+  array.inject(0){|sum,x| sum + x }
 end
